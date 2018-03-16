@@ -1,0 +1,32 @@
+[
+  {
+    "description": "concatコマンドは 与えられた画像を合成できる",
+    "args": ["concat", "./out/concat.png", "./img/F.png", "./img/U.png", "./img/J.png", "./img/I.png"],
+    "preparedImage": "./test/img/basic/concat.png"
+  },
+  {
+    "description": "resizeコマンドは 2倍に拡大した画像を生成できる",
+    "args": ["resize", "./out/resize2x.png", 2, "./img/A.png"],
+    "preparedImage": "./test/img/basic/resize2x.png"
+  },
+  {
+    "description": "resizeコマンドは 0.5倍に縮小した画像を生成できる",
+    "args": ["resize", "./out/resize05x.png", 0.5, "./img/B.png"],
+    "preparedImage": "./test/img/basic/resize05x.png"
+  },
+  {
+    "description": "rotateコマンドは 90度回転した画像を生成できる",
+    "args": ["rotate", "./out/rotate90.png", 90, "./img/A.png"],
+    "preparedImage": "./test/img/basic/rotate90.png"
+  },
+  {
+    "description": "rotateコマンドは 180度回転した画像を生成できる",
+    "args": ["rotate", "./out/rotate180.png", 180, "./img/A.png"],
+    "preparedImage": "./test/img/basic/rotate180.png"
+  },
+  {
+    "description": "edgeコマンドは エッジ抽出した画像を生成できる",
+    "args": ["edge", "./out/edge.png", "./test/img/basic/concat.png"],
+    "preparedImage": "./test/img/basic/edge.png"
+  }
+] 
